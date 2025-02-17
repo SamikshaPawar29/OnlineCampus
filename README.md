@@ -1,46 +1,47 @@
-**﻿# Online Campus Recruitment System**
+# Online Campus Recruitment System
 
-📋 Project Overview
+## 📋 Project Overview
 The Online Campus Management System is a web-based platform developed using HTML, CSS, JavaScript, PHP, and MySQL. It facilitates the management of student, faculty, and administrative activities within an educational institution.
 
-🛠️ Technologies Used
-Frontend: HTML, CSS, JavaScript
-Backend: PHP
-Database: MySQL (campus.sql)
-Server: XAMPP (Apache, MySQL, PHP)
+## 🛠️ Technologies Used
+- **Frontend:** HTML, CSS, JavaScript
+- **Backend:** PHP
+- **Database:** MySQL (`campus.sql`)
+- **Server:** XAMPP (Apache, MySQL, PHP)
 
-🚀 How to Run the Project using XAMPP
+## 🚀 How to Run the Project using XAMPP
 
-1️⃣ Install XAMPP
-Download and install XAMPP based on your operating system.
-Open XAMPP Control Panel and start Apache and MySQL.
+### 1️⃣ Install XAMPP
+- Download and install XAMPP based on your operating system.
+- Open the XAMPP Control Panel and start **Apache** and **MySQL**.
 
-2️⃣ Setup the Database
-Open http://localhost/phpmyadmin/ in your browser.
-Click on Databases and create a new database named campus.
-Click Import, then Browse and select campus.sql.
-Click Go to import the database.
+### 2️⃣ Setup the Database
+- Open [http://localhost/phpmyadmin/](http://localhost/phpmyadmin/) in your browser.
+- Click on **Databases** and create a new database named `campus`.
+- Click **Import**, then **Browse** and select `campus.sql`.
+- Click **Go** to import the database.
 
-3️⃣ Configure Database Connection
-Open the db_config.php file in the project.
-Update the database credentials if needed:
+### 3️⃣ Configure Database Connection
+- Open the `db_config.php` file in the project.
+- Update the database credentials if needed:
+  ```php
+  <?php
+  $host = "localhost";
+  $user = "root"; // Default XAMPP user
+  $password = ""; // Leave empty for XAMPP
+  $database = "campus";
 
-        <?php
-        $host = "localhost";
-        $user = "root"; // Default XAMPP user
-        $password = ""; // Leave empty for XAMPP
-        $database = "campus";
+  $conn = new mysqli($host, $user, $password, $database);
+  if ($conn->connect_error) {
+      die("Connection failed: " . $conn->connect_error);
+  }
+  ?>
 
-        $conn = new mysqli($host, $user, $password, $database);
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
-        ?>
 
-4️⃣ Place the Project in XAMPP
+### 4️⃣ Place the Project in XAMPP
         Move the entire campus/ folder into C:\xampp\htdocs\.
 
-5️⃣ Run the Project
+### 5️⃣ Run the Project
         Open a browser and go to:
 
         http://localhost/campus/
