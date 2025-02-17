@@ -48,15 +48,15 @@ The Online Campus Management System is a web-based platform developed using HTML
         Use the login or register page to access the system.
         
 ### 🔑 Default Admin Credentials (if applicable)
-        -Username: admin
-        -Password: admin123
+        - **Username: admin
+        - **Password: admin123
         
 ### 🎯 Features
-    -✔️ User authentication (Login/Register)
-    -✔️ Admin dashboard for managing users
-    -✔️ Student profile management
-    -✔️ Faculty and course management
-    -✔️ Database-driven operations
+    ✔️ User authentication (Login/Register)
+    ✔️ Admin dashboard for managing users
+    ✔️ Student profile management
+    ✔️ Faculty and course management
+    ✔️ Database-driven operations
 
 ### 📌 Additional Notes
 If XAMPP is using a different port (e.g., 8080), update the URL:
